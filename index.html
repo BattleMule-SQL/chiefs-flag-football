@@ -9,6 +9,7 @@
 <body>
   <header class="hero">
     <div class="wrap">
+      <button id="lang-toggle" class="lang-toggle" type="button">Español</button>
       <div class="badge" aria-hidden="true">🏈</div>
       <h1 id="team-name"></h1>
       <p id="team-league" class="league"></p>
@@ -19,24 +20,24 @@
     <section id="next-up" class="card next" hidden></section>
 
     <nav class="tabs" aria-label="Sections">
-      <a href="#announcements">Announcements</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#fields">Fields</a>
+      <a href="#announcements" data-i18n="announcements">Announcements</a>
+      <a href="#schedule" data-i18n="schedule">Schedule</a>
+      <a href="#fields" data-i18n="fields">Fields</a>
     </nav>
 
     <section id="announcements">
-      <h2>Announcements</h2>
+      <h2 data-i18n="announcements">Announcements</h2>
       <div id="announcement-list" class="stack"></div>
     </section>
 
     <section id="schedule">
-      <h2>Schedule</h2>
+      <h2 data-i18n="schedule">Schedule</h2>
       <div class="record" id="record"></div>
       <div id="schedule-list" class="stack"></div>
     </section>
 
     <section id="fields">
-      <h2>Field Locations</h2>
+      <h2 data-i18n="fieldLocations">Field Locations</h2>
       <div id="field-list" class="grid"></div>
       <div id="map-list" class="stack maps"></div>
     </section>

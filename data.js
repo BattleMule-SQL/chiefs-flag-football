@@ -68,3 +68,23 @@ const SCHEDULE = [
   { date: "2026-12-02", time: "18:00", type: "practice", field: "sportspark", spot: "Field 4" },
   { date: "2026-12-16", time: "18:00", type: "practice", field: "sportspark", spot: "Field 4" },
 ];
+
+// Spanish versions of the text above, used by the "Español" button.
+// Left side must match the English text exactly. Anything not listed stays in English.
+const SPANISH = {
+  "Flag Football 2026 · Ages 6–8 · Team 1": "Flag Football 2026 · 6 a 8 años · Equipo 1",
+  "Picture day — Thursday, November 19": "Día de fotos — jueves 19 de noviembre",
+  "Time TBD. We'll post the time here once it's set.": "Hora por confirmar. Publicaremos la hora aquí cuando esté definida.",
+  "Wednesday practices on Field 4. 6:00 PM games on the New Fields.": "Prácticas los miércoles en el Campo 4. Partidos de las 6:00 p.m. en los Campos Nuevos.",
+  "Saturday 10:00 AM games (Fields 2 and 4).": "Partidos los sábados a las 10:00 a.m. (Campos 2 y 4).",
+  "Sports Park — New Side": "Sports Park — Lado Nuevo",
+  "Fields 1–4. Wednesday practices are on Field 4 (bottom left).": "Campos 1–4. Las prácticas de los miércoles son en el Campo 4 (abajo a la izquierda).",
+  "Picture Day": "Día de fotos",
+  "Team 3": "Equipo 3",
+  "Team 4": "Equipo 4",
+  "Field 2": "Campo 2",
+  "Field 4": "Campo 4",
+  "New Fields (soccer)": "Campos Nuevos (fútbol)",
+  "New Fields (football)": "Campos Nuevos (fútbol americano)",
+  "Field TBD (updated schedule coming)": "Campo por confirmar (pronto habrá calendario actualizado)",
+};
