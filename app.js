@@ -1,7 +1,7 @@
 // Renders the page from data.js. You shouldn't need to edit this file.
 
 const $ = (id) => document.getElementById(id);
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 // Page labels in each language. Content text is translated via SPANISH in data.js.
@@ -27,7 +27,7 @@ const UI = {
 const getLang = () => {
   const q = new URLSearchParams(location.search).get("lang");
   if (q === "es" || q === "en") return q;
-  try { return localStorage.getItem("lang") === "es" ? "es" : "en"; } catch { return "en"; }
+  try { return localStorage.getItem("lang") === "es" ? "es" : "en"; } catch (e) { return "en"; }
 };
 let lang = getLang();
 let L = UI[lang];
@@ -156,7 +156,7 @@ function render() {
 
 $("lang-toggle").addEventListener("click", () => {
   lang = lang === "es" ? "en" : "es";
-  try { localStorage.setItem("lang", lang); } catch {}
+  try { localStorage.setItem("lang", lang); } catch (e) {}
   const url = new URL(location.href);
   url.searchParams.set("lang", lang);
   history.replaceState(null, "", url);

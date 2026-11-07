@@ -51,12 +51,12 @@ const MAPS = [
 // Add result like "W 28–14" or "L 7–21" once a game is played.
 const SCHEDULE = [
   // Games — Team 1 (Chiefs)
-  { date: "2026-11-18", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields (soccer)" },
-  { date: "2026-11-21", time: "10:00", type: "game", opponent: "Team 4", field: "citizens", spot: "Field 2" },
-  { date: "2026-12-05", time: "18:00", type: "game", opponent: "Team 3", field: "sportspark", spot: "Field TBD (updated schedule coming)" },
-  { date: "2026-12-09", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields (football)" },
-  { date: "2026-12-12", time: "10:00", type: "game", opponent: "Team 4", field: "citizens", spot: "Field 4" },
-  { date: "2026-12-19", time: "10:00", type: "game", opponent: "Team 3", field: "citizens", spot: "Field 4" },
+  { date: "2026-11-18", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Soccer West" },
+  { date: "2026-11-21", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 2" },
+  { date: "2026-12-05", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 2" },
+  { date: "2026-12-09", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Football Middle/West" },
+  { date: "2026-12-12", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 4" },
+  { date: "2026-12-19", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 4" },
 
   // Team events
   { date: "2026-11-19", time: "TBD", type: "event", title: "Picture Day" },
@@ -80,11 +80,8 @@ const SPANISH = {
   "Sports Park — New Side": "Sports Park — Lado Nuevo",
   "Fields 1–4. Wednesday practices are on Field 4 (bottom left).": "Campos 1–4. Las prácticas de los miércoles son en el Campo 4 (abajo a la izquierda).",
   "Picture Day": "Día de fotos",
-  "Team 3": "Equipo 3",
-  "Team 4": "Equipo 4",
   "Field 2": "Campo 2",
   "Field 4": "Campo 4",
-  "New Fields (soccer)": "Campos Nuevos (fútbol)",
-  "New Fields (football)": "Campos Nuevos (fútbol americano)",
-  "Field TBD (updated schedule coming)": "Campo por confirmar (pronto habrá calendario actualizado)",
+  "New Fields – Soccer West": "Campos Nuevos – Fútbol Oeste",
+  "New Fields – Football Middle/West": "Campos Nuevos – Fútbol Americano Centro/Oeste",
 };
