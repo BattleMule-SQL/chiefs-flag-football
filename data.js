@@ -14,9 +14,9 @@ const TEAM = {
 // Newest first. Set pinned: true to keep one at the top.
 const ANNOUNCEMENTS = [
   {
-    date: "2026-11-02",
-    title: "Picture day — Thursday, November 19",
-    body: "Time TBD. We'll post the time here once it's set.",
+    date: "2026-11-11",
+    title: "Picture day — Thursday, November 19 at 6:30 PM",
+    body: "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats!",
     pinned: true,
   },
 ];
@@ -59,7 +59,7 @@ const SCHEDULE = [
   { date: "2026-12-19", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 4" },
 
   // Team events
-  { date: "2026-11-19", time: "TBD", type: "event", title: "Picture Day" },
+  { date: "2026-11-19", time: "18:30", type: "event", title: "Picture Day – Community Center, California Room (arrive 6:20 PM)" },
 
   // Practices — Wednesdays at 6:00 PM, Sports Park Field 4
   // (Nov 18 and Dec 9 dropped — games those nights)
@@ -73,13 +73,13 @@ const SCHEDULE = [
 // Left side must match the English text exactly. Anything not listed stays in English.
 const SPANISH = {
   "Flag Football 2026 · Ages 6–8 · Team 1": "Flag Football 2026 · 6 a 8 años · Equipo 1",
-  "Picture day — Thursday, November 19": "Día de fotos — jueves 19 de noviembre",
-  "Time TBD. We'll post the time here once it's set.": "Hora por confirmar. Publicaremos la hora aquí cuando esté definida.",
+  "Picture day — Thursday, November 19 at 6:30 PM": "Día de fotos — jueves 19 de noviembre a las 6:30 p.m.",
+  "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats!": "Nuestra foto de equipo es a las 6:30 p.m. en el California Room del Centro Comunitario. Por favor lleguen a las 6:20 p.m. — las fotos se toman a la hora programada aunque no estén todos. Los padres deben esperar afuera del salón hasta que terminen las fotos. Traigan la cantidad exacta en un sobre; es posible que no haya cambio. ¡No se permiten tacos (cleats)!",
   "Wednesday practices on Field 4. 6:00 PM games on the New Fields.": "Prácticas los miércoles en el Campo 4. Partidos de las 6:00 p.m. en los Campos Nuevos.",
   "Saturday 10:00 AM games (Fields 2 and 4).": "Partidos los sábados a las 10:00 a.m. (Campos 2 y 4).",
   "Sports Park — New Side": "Sports Park — Lado Nuevo",
   "Fields 1–4. Wednesday practices are on Field 4 (bottom left).": "Campos 1–4. Las prácticas de los miércoles son en el Campo 4 (abajo a la izquierda).",
-  "Picture Day": "Día de fotos",
+  "Picture Day – Community Center, California Room (arrive 6:20 PM)": "Día de fotos – Centro Comunitario, California Room (llegar a las 6:20 p.m.)",
   "Field 2": "Campo 2",
   "Field 4": "Campo 4",
   "New Fields – Soccer West": "Campos Nuevos – Fútbol Oeste",
