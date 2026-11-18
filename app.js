@@ -83,7 +83,8 @@ function render() {
 
   // Next up
   const schedule = [...SCHEDULE].sort((a, b) => a.date.localeCompare(b.date));
-  const next = schedule.find((e) => parseDate(e.date) >= today);
+  const isCanceled = (e) => /^cancel/i.test((e.result || "").trim());
+  const next = schedule.find((e) => parseDate(e.date) >= today && !isCanceled(e));
   if (next) {
     const f = FIELDS[next.field];
     const days = Math.round((parseDate(next.date) - today) / 86400000);
@@ -119,7 +120,7 @@ function render() {
     const d = parseDate(e.date);
     const past = d < today;
     const r = (e.result || "").trim();
-    const rc = /^w/i.test(r) ? "w" : /^l/i.test(r) ? "l" : "";
+    const rc = /^w/i.test(r) ? "w" : /^l/i.test(r) ? "l" : /^cancel/i.test(r) ? "canceled" : "";
     return `
     <div class="card event${past ? " past" : ""}">
       <div class="date">
@@ -130,7 +131,7 @@ function render() {
         <div class="title">${eventTitle(e)}<span class="tag">${eventTag(e)}</span></div>
         <div class="meta">${d.toLocaleDateString(L.locale, { weekday: "short" })} · ${esc(fmtTime(e.time))}${e.field ? " · " + where(e) : ""}</div>
       </div>
-      ${r ? `<div class="result ${rc}">${esc(r)}</div>` : ""}
+      ${r ? `<div class="result ${rc}">${esc(tr(r))}</div>` : ""}
     </div>`;
   }).join("");
 
