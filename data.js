@@ -14,6 +14,12 @@ const TEAM = {
 // Newest first. Set pinned: true to keep one at the top.
 const ANNOUNCEMENTS = [
   {
+    date: "2026-11-18",
+    title: "Tonight's game vs. Bears is canceled due to weather",
+    body: "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM.",
+    pinned: true,
+  },
+  {
     date: "2026-11-11",
     title: "Picture day — Thursday, November 19 at 6:30 PM",
     body: "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats!",
@@ -51,7 +57,7 @@ const MAPS = [
 // Add result like "W 28–14" or "L 7–21" once a game is played.
 const SCHEDULE = [
   // Games — Team 1 (Chiefs)
-  { date: "2026-11-18", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Soccer West" },
+  { date: "2026-11-18", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Soccer West", result: "Canceled (weather)" },
   { date: "2026-11-21", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 2" },
   { date: "2026-12-05", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 2" },
   { date: "2026-12-09", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Football Middle/West" },
@@ -72,6 +78,9 @@ const SCHEDULE = [
 // Spanish versions of the text above, used by the "Español" button.
 // Left side must match the English text exactly. Anything not listed stays in English.
 const SPANISH = {
+  "Tonight's game vs. Bears is canceled due to weather": "El partido de esta noche contra los Bears se canceló por el clima",
+  "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM.": "El partido de hoy a las 6:00 p.m. contra los Bears en Sports Park se canceló por el clima. El día de fotos sigue siendo mañana, jueves 19 de noviembre a las 6:30 p.m. — por favor lleguen a las 6:20 p.m.",
+  "Canceled (weather)": "Cancelado (clima)",
   "Flag Football 2026 · Ages 6–8 · Team 1": "Flag Football 2026 · 6 a 8 años · Equipo 1",
   "Picture day — Thursday, November 19 at 6:30 PM": "Día de fotos — jueves 19 de noviembre a las 6:30 p.m.",
   "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats!": "Nuestra foto de equipo es a las 6:30 p.m. en el California Room del Centro Comunitario. Por favor lleguen a las 6:20 p.m. — las fotos se toman a la hora programada aunque no estén todos. Los padres deben esperar afuera del salón hasta que terminen las fotos. Traigan la cantidad exacta en un sobre; es posible que no haya cambio. ¡No se permiten tacos (cleats)!",
