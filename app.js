@@ -12,7 +12,7 @@ const UI = {
     nextUp: "Next up", today: "Today", tomorrow: "Tomorrow", inDays: (n) => `In ${n} days`,
     pinned: "Pinned", noAnnouncements: "No announcements right now.", record: "Record",
     practice: "Practice", event: "Event", home: "Home", away: "Away", game: "Game",
-    tbd: "TBD", directions: "Directions", tapToEnlarge: "Tap to enlarge.", fieldMap: "field map",
+    tbd: "TBD", directions: "Directions", tapToEnlarge: "Tap to enlarge.", snack: "Snacks", fieldMap: "field map",
   },
   es: {
     locale: "es-US", toggle: "English", toggleLabel: "View in English",
@@ -20,7 +20,7 @@ const UI = {
     nextUp: "Próximo", today: "Hoy", tomorrow: "Mañana", inDays: (n) => `En ${n} días`,
     pinned: "Fijado", noAnnouncements: "No hay anuncios por ahora.", record: "Récord",
     practice: "Práctica", event: "Evento", home: "Local", away: "Visitante", game: "Partido",
-    tbd: "Por confirmar", directions: "Cómo llegar", tapToEnlarge: "Toca para ampliar.", fieldMap: "mapa de campos",
+    tbd: "Por confirmar", directions: "Cómo llegar", tapToEnlarge: "Toca para ampliar.", snack: "Merienda", fieldMap: "mapa de campos",
   },
 };
 
@@ -130,6 +130,7 @@ function render() {
       <div class="info">
         <div class="title">${eventTitle(e)}<span class="tag">${eventTag(e)}</span></div>
         <div class="meta">${d.toLocaleDateString(L.locale, { weekday: "short" })} · ${esc(fmtTime(e.time))}${e.field ? " · " + where(e) : ""}</div>
+        ${e.snack ? `<div class="snack">🍎 ${L.snack}: ${esc(e.snack)}</div>` : ""}
       </div>
       ${r ? `<div class="result ${rc}">${esc(tr(r))}</div>` : ""}
     </div>`;

@@ -121,6 +121,7 @@ h2 { margin: 24px 0 12px; font-size: 20px; }
 
 .maps { margin-top: 10px; }
 .map { margin: 0; }
+.snack { margin-top: 4px; font-size: 14px; color: var(--muted); }
 .map h3 { margin: 0 0 10px; font-size: 16px; }
 .map img { display: block; width: 100%; height: auto; border-radius: 10px; }
 .map figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }

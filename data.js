@@ -14,16 +14,20 @@ const TEAM = {
 // Newest first. Set pinned: true to keep one at the top.
 const ANNOUNCEMENTS = [
   {
+    date: "2026-11-21",
+    title: "Great game today, Chiefs!",
+    body: "Congratulations to all our players on a great game against the Bills this morning! Thanks to every parent and family member who came out to cheer. Next up: practice Wednesday, November 25 at 6:00 PM on Field 4 at Sports Park, then our game against the Raiders on Saturday, December 5 at 10:00 AM at Citizens Park. Go Chiefs!",
+    pinned: true,
+  },
+  {
     date: "2026-11-18",
     title: "Tonight's game vs. Bears is canceled due to weather",
     body: "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM. Uniform: Chiefs jersey with black shorts or black sweats.",
-    pinned: true,
   },
   {
     date: "2026-11-11",
     title: "Picture day — Thursday, November 19 at 6:30 PM",
     body: "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats! Uniform: Chiefs jersey with black shorts or black sweats.",
-    pinned: true,
   },
 ];
 
@@ -49,20 +53,26 @@ const MAPS = [
     image: "images/sports-park-map.jpg",
     caption: "Fields 1–4. Wednesday practices are on Field 4 (bottom left).",
   },
+  {
+    title: "Citizens Park",
+    image: "images/citizens-park-map.jpg",
+    caption: "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, by the basketball court). Parking lot is off N Thompson Ave.",
+  },
 ];
 
 // type: "game", "practice", or "event" (events use title instead of opponent).
 // spot: which field within the park (optional). field is optional for events.
 // home: true/false is optional — leave it out to just show "vs".
 // Add result like "W 28–14" or "L 7–21" once a game is played.
+// snack: name of the family bringing post-game snacks (optional).
 const SCHEDULE = [
   // Games — Team 1 (Chiefs)
   { date: "2026-11-18", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Soccer West", result: "Canceled (weather)" },
-  { date: "2026-11-21", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 2" },
-  { date: "2026-12-05", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 2" },
-  { date: "2026-12-09", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Football Middle/West" },
-  { date: "2026-12-12", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 4" },
-  { date: "2026-12-19", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 4" },
+  { date: "2026-11-21", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 2", result: "Played" },
+  { date: "2026-12-05", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 2", snack: "Winston" },
+  { date: "2026-12-09", time: "18:00", type: "game", opponent: "Bears", field: "sportspark", spot: "New Fields – Football Middle/West", snack: "Giselle & Noah" },
+  { date: "2026-12-12", time: "10:00", type: "game", opponent: "Bills", field: "citizens", spot: "Field 4", snack: "Maribel" },
+  { date: "2026-12-19", time: "10:00", type: "game", opponent: "Raiders", field: "citizens", spot: "Field 4", snack: "Damien" },
 
   // Team events
   { date: "2026-11-19", time: "18:30", type: "event", title: "Picture Day – Community Center, California Room (arrive 6:20 PM) · Wear Chiefs jersey + black shorts or black sweats" },
@@ -78,6 +88,11 @@ const SCHEDULE = [
 // Spanish versions of the text above, used by the "Español" button.
 // Left side must match the English text exactly. Anything not listed stays in English.
 const SPANISH = {
+  "Great game today, Chiefs!": "¡Gran partido hoy, Chiefs!",
+  "Congratulations to all our players on a great game against the Bills this morning! Thanks to every parent and family member who came out to cheer. Next up: practice Wednesday, November 25 at 6:00 PM on Field 4 at Sports Park, then our game against the Raiders on Saturday, December 5 at 10:00 AM at Citizens Park. Go Chiefs!": "¡Felicidades a todos nuestros jugadores por un gran partido contra los Bills esta mañana! Gracias a todos los padres y familiares que vinieron a animar. Lo que sigue: práctica el miércoles 25 de noviembre a las 6:00 p.m. en el Campo 4 de Sports Park, y luego nuestro partido contra los Raiders el sábado 5 de diciembre a las 10:00 a.m. en Citizens Park. ¡Vamos Chiefs!",
+  "Played": "Jugado",
+  "Citizens Park": "Citizens Park",
+  "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, by the basketball court). Parking lot is off N Thompson Ave.": "Campos 1–4. Nuestros partidos de los sábados son en el Campo 2 (abajo a la izquierda) y el Campo 4 (arriba, junto a la cancha de básquetbol). El estacionamiento está sobre N Thompson Ave.",
   "Tonight's game vs. Bears is canceled due to weather": "El partido de esta noche contra los Bears se canceló por el clima",
   "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM. Uniform: Chiefs jersey with black shorts or black sweats.": "El partido de hoy a las 6:00 p.m. contra los Bears en Sports Park se canceló por el clima. El día de fotos sigue siendo mañana, jueves 19 de noviembre a las 6:30 p.m. — por favor lleguen a las 6:20 p.m. Uniforme: camiseta de los Chiefs con shorts negros o pants deportivos negros.",
   "Canceled (weather)": "Cancelado (clima)",
