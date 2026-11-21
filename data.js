@@ -19,16 +19,6 @@ const ANNOUNCEMENTS = [
     body: "Congratulations to all our players on a great game against the Bills this morning! Thanks to every parent and family member who came out to cheer. Next up: practice Wednesday, November 25 at 6:00 PM on Field 4 at Sports Park, then our game against the Raiders on Saturday, December 5 at 10:00 AM at Citizens Park. Go Chiefs!",
     pinned: true,
   },
-  {
-    date: "2026-11-18",
-    title: "Tonight's game vs. Bears is canceled due to weather",
-    body: "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM. Uniform: Chiefs jersey with black shorts or black sweats.",
-  },
-  {
-    date: "2026-11-11",
-    title: "Picture day — Thursday, November 19 at 6:30 PM",
-    body: "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats! Uniform: Chiefs jersey with black shorts or black sweats.",
-  },
 ];
 
 // One entry per park. Field keys are referenced by the schedule below.
@@ -56,7 +46,7 @@ const MAPS = [
   {
     title: "Citizens Park",
     image: "images/citizens-park-map.jpg",
-    caption: "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, by the basketball court). Parking lot is off N Thompson Ave.",
+    caption: "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, next to the basketball courts). Parking lot is off N Thompson Ave.",
   },
 ];
 
@@ -92,13 +82,9 @@ const SPANISH = {
   "Congratulations to all our players on a great game against the Bills this morning! Thanks to every parent and family member who came out to cheer. Next up: practice Wednesday, November 25 at 6:00 PM on Field 4 at Sports Park, then our game against the Raiders on Saturday, December 5 at 10:00 AM at Citizens Park. Go Chiefs!": "¡Felicidades a todos nuestros jugadores por un gran partido contra los Bills esta mañana! Gracias a todos los padres y familiares que vinieron a animar. Lo que sigue: práctica el miércoles 25 de noviembre a las 6:00 p.m. en el Campo 4 de Sports Park, y luego nuestro partido contra los Raiders el sábado 5 de diciembre a las 10:00 a.m. en Citizens Park. ¡Vamos Chiefs!",
   "Played": "Jugado",
   "Citizens Park": "Citizens Park",
-  "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, by the basketball court). Parking lot is off N Thompson Ave.": "Campos 1–4. Nuestros partidos de los sábados son en el Campo 2 (abajo a la izquierda) y el Campo 4 (arriba, junto a la cancha de básquetbol). El estacionamiento está sobre N Thompson Ave.",
-  "Tonight's game vs. Bears is canceled due to weather": "El partido de esta noche contra los Bears se canceló por el clima",
-  "Today's 6:00 PM game against the Bears at Sports Park is canceled due to weather. Picture day is still on for tomorrow, Thursday, November 19 at 6:30 PM — please arrive by 6:20 PM. Uniform: Chiefs jersey with black shorts or black sweats.": "El partido de hoy a las 6:00 p.m. contra los Bears en Sports Park se canceló por el clima. El día de fotos sigue siendo mañana, jueves 19 de noviembre a las 6:30 p.m. — por favor lleguen a las 6:20 p.m. Uniforme: camiseta de los Chiefs con shorts negros o pants deportivos negros.",
+  "Fields 1–4. Our Saturday games are on Field 2 (bottom left) and Field 4 (top, next to the basketball courts). Parking lot is off N Thompson Ave.": "Campos 1–4. Nuestros partidos de los sábados son en el Campo 2 (abajo a la izquierda) y el Campo 4 (arriba, junto a las canchas de básquetbol). El estacionamiento está sobre N Thompson Ave.",
   "Canceled (weather)": "Cancelado (clima)",
   "Flag Football 2026 · Ages 6–8 · Team 1": "Flag Football 2026 · 6 a 8 años · Equipo 1",
-  "Picture day — Thursday, November 19 at 6:30 PM": "Día de fotos — jueves 19 de noviembre a las 6:30 p.m.",
-  "Our team photo is at 6:30 PM in the California Room at the Community Center. Please arrive by 6:20 PM — photos are taken at the scheduled time whether or not everyone is there. Parents must wait outside the room until pictures are over. Bring the correct amount in an envelope; change may not be available. No cleats! Uniform: Chiefs jersey with black shorts or black sweats.": "Nuestra foto de equipo es a las 6:30 p.m. en el California Room del Centro Comunitario. Por favor lleguen a las 6:20 p.m. — las fotos se toman a la hora programada aunque no estén todos. Los padres deben esperar afuera del salón hasta que terminen las fotos. Traigan la cantidad exacta en un sobre; es posible que no haya cambio. ¡No se permiten tacos (cleats)! Uniforme: camiseta de los Chiefs con shorts negros o pants deportivos negros.",
   "Wednesday practices on Field 4. 6:00 PM games on the New Fields.": "Prácticas los miércoles en el Campo 4. Partidos de las 6:00 p.m. en los Campos Nuevos.",
   "Saturday 10:00 AM games (Fields 2 and 4).": "Partidos los sábados a las 10:00 a.m. (Campos 2 y 4).",
   "Sports Park — New Side": "Sports Park — Lado Nuevo",
